@@ -38,7 +38,6 @@ const recentThreshold = subWeeks(Date.now(), 1).getTime();
 /** @type {Ref<Activity>} */
 export const recentActivities = computed(() => Array.from(activities.values())
     .filter(activity => activity.used_at > recentThreshold || activity.created_at > recentThreshold));
-    console.log(recentActivities)
 
 /** @type {(activity: Activity) => Promise<void>} */
 export const addActivity = async (activity) => {

@@ -1,6 +1,5 @@
 import { css } from "../deps/goober.mjs";
 import Header from "./Header.mjs";
-import Auth from "./Auth.mjs";
 import { activeRoute } from "../services/routes.mjs";
 
 const styles = {
@@ -9,20 +8,14 @@ const styles = {
     `
 }
 export default {
-    components: { Header, Auth },
+    components: { Header },
     template: `<div class="page">
         <Header />
         <main class="page-wrapper">
-            <template v-if="hasAuth">
-                <component :is="activeRoute" />
-            </template>
-            <Auth v-else />
+            <component :is="activeRoute" />
         </main>
     </div>`,
     computed: {
-        hasAuth() {
-            return true;
-        },
         activeRoute() {
             return activeRoute.value;
         }

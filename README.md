@@ -18,7 +18,7 @@ npm run serve
 
 ## Development
 
-This tool is build step free, and serve it in a browser with any HTTP server, but `npm run serve` is an included command.
+This tool is build step free, just serve it in a browser with any HTTP server, but `npm run serve` is an included command.
 
 Because the app is served under /time-tracker in production, it must be served in the same way locally. `npm run setup` will make a symbolic link to the `/src` directory which will allow access locally at [http://localhost:8080/time-tracker](http://localhost:8080/time-tracker).
 

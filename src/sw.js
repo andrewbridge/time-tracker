@@ -3,7 +3,6 @@ const cacheName = 'time-tracker-v1';
 const appShellFiles = [
     '/time-tracker/components/AddActivityModal.mjs',
     '/time-tracker/components/App.mjs',
-    '/time-tracker/components/Auth.mjs',
     '/time-tracker/components/EditableText.mjs',
     '/time-tracker/components/Header.mjs',
     '/time-tracker/components/Modal.mjs',
